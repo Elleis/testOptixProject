@@ -7,6 +7,8 @@ This is a test repo for Cal Poly's CSC 473 Advanced Rendering course. The base o
 - CMake 3.17+ (https://cmake.org/download/)
 - Crytek Sponza model (https://casual-effects.com/data/)
 
+Before proceeding, create a "model" directory at the top level of this repository and place the files from the Sponza zip file downloaded above within it. 
+
 # Build Instructions
 First, make sure the following environment variables are set:
 - CUDA_PATH
