@@ -4,7 +4,7 @@ This is a test repo for Cal Poly's CSC 473 Advanced Rendering course. The base o
 # Dependencies
 - Cuda 11+ (https://developer.nvidia.com/cuda-downloads)
 - OptiX 7+ (https://developer.nvidia.com/designworks/optix/download)
-- CMake 3.17+ (https://cmake.org/download/)
+- CMake 2.8+ (https://cmake.org/download/)
 - Crytek Sponza model (https://casual-effects.com/data/)
 
 Before proceeding, create a "model" directory at the top level of this repository and place the files from the Sponza zip file downloaded above within it. 
@@ -19,3 +19,6 @@ Now, you should be able to build by:
 1. Making a "build" directory in the top level of this repository.
 2. Moving into the build directory.
 3. Executing the command "cmake ..".
+
+# Common Issues
+- If making results in an error involing "bin2c" not being found, make sure to add /cuda/bin to your path.
