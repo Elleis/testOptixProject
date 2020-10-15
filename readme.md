@@ -20,7 +20,7 @@ First, make sure the following environment variables are set:
 - export PATH="/usr/local/cuda/bin:$PATH"
 - export OptiX_INSTALL_DIR="/opt/NVIDIA-OptiX"
 - export OptiX_INCLUDE="/opt/NVIDIA-OptiX/SDK/CUDA"
-
+***
 Now, you should be able to build by:
 1. Making a "build" directory in the top level of this repository.
 2. Moving into the build directory.
