@@ -22,7 +22,7 @@ endif (POLICY CMP0048)
 
 project(testOptixProject)
 
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 2.8)
 set (CMAKE_CXX_FLAGS "--std=c++11")
 set (CUDA_PROPAGATE_HOST_FLAGS ON)
 
@@ -93,4 +93,5 @@ target_link_libraries(testOptiXProject
   glfWindow
   glfw
   ${OPENGL_gl_LIBRARY}
+  -ldl
   )
