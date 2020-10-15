@@ -15,6 +15,12 @@ First, make sure the following environment variables are set:
 - OptiX_INSTALL_DIR (should contain "include" and "SDK" directories)
 - OptiX_INCLUDE (should be OptiX_INSTALL_DIR/SDK/CUDA)
 
+## For Cal Poly 127 Lab Machines
+- source "/etc/environment"
+- export PATH="/usr/local/cuda/bin:$PATH"
+- export OptiX_INSTALL_DIR="/opt/NVIDIA-OptiX"
+- export OptiX_INCLUDE="/opt/NVIDIA-OptiX/SDK/CUDA"
+
 Now, you should be able to build by:
 1. Making a "build" directory in the top level of this repository.
 2. Moving into the build directory.
