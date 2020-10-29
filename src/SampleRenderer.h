@@ -102,23 +102,23 @@ namespace osc {
   protected:
     /*! @{ CUDA device context and stream that optix pipeline will run
         on, as well as device properties for this device */
-    CUcontext          cudaContext;
-    CUstream           stream;
-    cudaDeviceProp     deviceProps;
+    CUcontext          cudaContext = {};
+    CUstream           stream = {};
+    cudaDeviceProp     deviceProps = {};
     /*! @} */
 
     //! the optix context that our pipeline will run in.
-    OptixDeviceContext optixContext;
+    OptixDeviceContext optixContext = {};
 
     /*! @{ the pipeline we're building */
-    OptixPipeline               pipeline;
-    OptixPipelineCompileOptions pipelineCompileOptions;
-    OptixPipelineLinkOptions    pipelineLinkOptions;
+    OptixPipeline               pipeline = {};
+    OptixPipelineCompileOptions pipelineCompileOptions = {};
+    OptixPipelineLinkOptions    pipelineLinkOptions = {};
     /*! @} */
 
     /*! @{ the module that contains out device programs */
-    OptixModule                 module;
-    OptixModuleCompileOptions   moduleCompileOptions;
+    OptixModule                 module = {};
+    OptixModuleCompileOptions   moduleCompileOptions = {};
     /* @} */
 
     /*! vector of all our program(group)s, and the SBT built around
