@@ -626,7 +626,7 @@ namespace osc {
                             1
                             ));
 
-    OptixDenoiserParams denoiserParams;
+    OptixDenoiserParams denoiserParams = {};
     denoiserParams.denoiseAlpha = 1;
     denoiserParams.hdrIntensity = (CUdeviceptr)0;
     denoiserParams.blendFactor  = 1.f/(launchParams.frame.frameID);
